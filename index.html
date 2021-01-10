@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+            <a href="#">Images</a>
+            <a href="https://about.google/intl/en/products/?tab=wh">
+                <img src="./images/apps.svg" /></a>
+            <a
+                href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ">
+                <button class="bg__primary sign_in">Sign in</button>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <img class="branding"
+                src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+        </div>
+        <form name="search">
+            <div class="search_input">
+                <span class="material-icons search_icon"> search </span>
+                <input class="input_box" type="text" name="q" />
+                <!-- <input type="hidden" name="btnI" /> -->
+
+                <svg class="x" onclick="speedRecognitionHandler()" focusable="false" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"
+                        fill="#4285f4"></path>
+                    <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
+                    <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"
+                        fill="#f4b400"></path>
+                    <path
+                        d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"
+                        fill="#ea4335"></path>
+                </svg>
+            </div>
+            <div class="action_buttons">
+                <button type="submit" onclick="regularSearchHandler(event)" value="Google Search">Google Search</button>
+                <button type="submit" onclick="feelingLuckyHandler(event)">I'm Feeling Lucky</button>
+            </div>
+        </form>
+        <div>
+            Google offered in:
+            <a href="#">हिन्दी</a>
+            <a href="#">বাংলা</a>
+            <a href="#">తెలుగు</a>
+            <a href="#">मराठी</a>
+            <a href="#">தமிழ்</a>
+            <a href="#">ગુજરાતી</a>
+            <a href="#">ಕನ್ನಡ</a>
+            <a href="#">മലയാളം</a>
+            <a href="#">ਪੰਜਾਬੀ</a>
+        </div>
+    </main>
+    <footer>
+        <p>India</p>
+        <span class="meta-left">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+            <a href="#">How Search works</a>
+        </span>
+        <span class="meta-right">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </span>
+    </footer>
+</body>
+
+</html>
