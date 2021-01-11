@@ -86,6 +86,11 @@ a:hover {
   padding-right: 40px;
   border: 1px solid #ccc;
 }
+.main .search_input input:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: #dfe1e500;
+}
 .main .search_input svg {
   width: 20px;
   height: 20px;
