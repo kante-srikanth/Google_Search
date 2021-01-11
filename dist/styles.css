@@ -20,7 +20,6 @@ a:hover {
   justify-content: flex-end;
   font-size: 14px;
   align-items: center;
-  height: 10vh;
 }
 .header * {
   padding: 8px;
