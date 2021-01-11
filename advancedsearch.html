@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="./main.js"></script>
+    <style>
+        .header {
+            background: #f1f1f1;
+        }
+
+        .header a .branding {
+            height: 35px;
+            opacity: 1;
+            position: absolute;
+            left: 10px;
+            top: 0;
+        }
+
+        .btn__primary {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .advanced_main {
+            margin-left: 40px;
+            color: black;
+        }
+
+        .advanced_main h3 {
+            color: #d93025;
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+
+        .advanced_main .form div {
+            display: flex;
+            padding: 10px 0 10px 0;
+            align-items: center;
+        }
+
+        .advanced_main .form div label {
+            width: 20%;
+        }
+
+        .advanced_main .form div input {
+            padding: 10px;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html">
+                <img class="branding"
+                    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+            </a>
+            <a href="./index.html">Back</a>
+            <a href="https://about.google/intl/en/products/?tab=wh">
+                <img src="./images/apps.svg" /></a>
+            <a
+                href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ">
+                <button class="btn__primary">Sign in</button>
+            </a>
+        </div>
+    </header>
+    <main class="advanced_main">
+        <h3>Advanced Search</h3>
+        <form name="search" class="form" action="https://google.com/search">
+            <p>Find pages with...</p>
+            <div><label>all these words:</label> <input type="text" name="as_q" /></div>
+            <div><label>this exact word or phrase:</label> <input type="text" name="as_epq" /></div>
+            <div><label>any of these words:</label> <input type="text" name="as_oq" /></div>
+            <div><label>none of these words:</label> <input type="text" name="as_eq" /></div>
+            <button class="btn__primary" type="submit" value="Google Search">
+                Advanced Search
+            </button>
+        </form>
+    </main>
+    <footer>
+        <p>India</p>
+        <span class="meta-left">
+            <a href="#">Help</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </span>
+    </footer>
+</body>
+
+</html>
