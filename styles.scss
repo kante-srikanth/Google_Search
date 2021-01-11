@@ -197,6 +197,12 @@ footer {
       display: none;
     }
   }
+
+  .advanced_main .form_container {
+    div {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -205,6 +211,30 @@ footer {
       input {
         width: 80%;
       }
+    }
+  }
+
+  .advanced_main .form_container {
+    div input {
+      width: 100%;
+    }
+    div label {
+      width: 50%;
+    }
+    div:last-child {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+  .advanced_main .form_container {
+    div input {
+      width: 43%;
+    }
+
+    div:last-child {
+      margin-left: 20%;
     }
   }
 }

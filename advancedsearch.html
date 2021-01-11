@@ -26,7 +26,7 @@
         }
 
         .advanced_main {
-            margin-left: 40px;
+            margin-left: 5%;
             color: black;
         }
 
@@ -36,19 +36,33 @@
             margin-bottom: 40px;
         }
 
-        .advanced_main .form div {
+        .form_container div {
             display: flex;
             padding: 10px 0 10px 0;
             align-items: center;
+            width: 100%;
+            margin-right: 20px;
         }
 
-        .advanced_main .form div label {
+        .form_container div:last-child {
+            justify-content: center;
+        }
+
+        .form_container div label {
             width: 20%;
         }
 
-        .advanced_main .form div input {
+        .form_container div input {
             padding: 10px;
-            width: 30%;
+            width: 33%;
+        }
+
+        .advanced_main .form_container {
+            display: flex;
+            padding: 10px 0 10px 0;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -76,13 +90,17 @@
         <h3>Advanced Search</h3>
         <form name="search" class="form" action="https://google.com/search">
             <p>Find pages with...</p>
-            <div><label>all these words:</label> <input type="text" name="as_q" /></div>
-            <div><label>this exact word or phrase:</label> <input type="text" name="as_epq" /></div>
-            <div><label>any of these words:</label> <input type="text" name="as_oq" /></div>
-            <div><label>none of these words:</label> <input type="text" name="as_eq" /></div>
-            <button class="btn__primary" type="submit" value="Google Search">
-                Advanced Search
-            </button>
+            <div class="form_container">
+                <div><label>all these words:</label> <input type="text" name="as_q" /></div>
+                <div><label>this exact word or phrase:</label> <input type="text" name="as_epq" /></div>
+                <div><label>any of these words:</label> <input type="text" name="as_oq" /></div>
+                <div><label>none of these words:</label> <input type="text" name="as_eq" /></div>
+                <div>
+                    <button class="btn__primary" type="submit" value="Google Search">
+                        Advanced Search
+                    </button>
+                </div>
+            </div>
         </form>
     </main>
     <footer>
