@@ -1,5 +1,5 @@
 function speedRecognitionHandler() {
-  var mic = event.target;
+  var mic = document.getElementsByClassName("micIcon")[0];
   mic.classList.add("mic");
   console.log(mic.classList);
   var searchInput = document.getElementsByClassName("input_box")[0];
