@@ -35,3 +35,11 @@ function feelingLuckyHandler(e) {
   form.action = `https://google.com/webhp?#q=${textterm}&btnI=I`;
   form.submit();
 }
+
+function imageSearchHandler(e) {
+  e.preventDefault();
+  var form = document.forms.search;
+  var textterm = form.elements[0].value;
+  form.action = `https://google.com/webhp?#q=${textterm}&tbm=isch`;
+  form.submit();
+}

@@ -77,6 +77,11 @@ a:hover {
   left: 40px;
   color: #9aa0a6;
 }
+.main .search_input .camera_icon {
+  color: #9aa0a6;
+  position: relative;
+  right: 100px;
+}
 .main .search_input input {
   width: 60%;
   height: 40px;
